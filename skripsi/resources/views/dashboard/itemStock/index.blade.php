@@ -12,7 +12,7 @@
 
 <div class="row">
     <div class="col card w-">
-        <h1 class="text-center m-3">List Stock</h1>
+        <h1 class="text-center m-3">Daftar Bank Unit</h1>
         <div class="car-body">
             <div class="input-group mb-3">
                 <label for="label">Tanggal Awal</label>
@@ -58,7 +58,7 @@
                         @method('post')
                         <div class="modal-body bg-white">
                             <div class="form-group m-3">
-                                <label for="">Nama Barang</label>
+                                <label for="">Nama Bank Unit</label>
                                 <select name="item_id" class="form-control" id="">
                                     @foreach($item as $f)
                                     <option value="{{$f->id}}">{{$f->item_name."/".$f->unit}}</option>
@@ -72,13 +72,17 @@
                             </div> 
 -->
                             <div class="form-group m-3">
-                                <label for="">Keterangan</label>
+                                <label for="">Pengelola</label>
                                 <textarea type="text" name="description" class="form-control"> </textarea>
                             </div>
 
                             <div class="form-group m-3">
-                                <label for="">Jumlah Stok</label>
+                                <label for="">Email</label>
                                 <input type="number" name="number" class="form-control">
+                            </div>
+                            <div class="form-group m-3">
+                                <label for="">Alamat</label>
+                                <textarea type="text" name="description" class="form-control"> </textarea>
                             </div>
 
                         </div>
@@ -96,10 +100,10 @@
                 <thead>
                     <tr>
                         <th>No.</th>
-                        <th>Nama Barang</th>
-                        <th>Keterangan</th>
-                        <th>Satuan Unit</th>
-                        <th>Jumlah Stok</th>
+                        <th>Nama Bank Unit</th>
+                        <th>Pengelola</th>
+                        <th>Alamat</th>
+                        <th>Email</th>
                         <th>Updated at</th>
                         <th>Aksi</th>
                     </tr>
@@ -158,7 +162,7 @@
                                         </div>
 
                                         <div class="form-group m-3">
-                                            <label for="">Jumlah Stok</label>
+                                            <label for="">Total</label>
                                             <input type="number" name="number" value="{{$x->number}}" class="form-control">
                                         </div>
 

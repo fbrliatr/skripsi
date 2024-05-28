@@ -14,9 +14,9 @@
 <div class="row">
     <div class="col card w-50">
     <form method="get" action="{{ route('admin.cetakRequestItem') }}">
-        <h1 class="text-center m-3">List Request Barang</h1>
+        <h1 class="text-center m-3">Daftar Jadwal Penjemputan</h1>
         <div class="car-body">
-            <div class="input-group mb-3">
+            <!-- <div class="input-group mb-3">
                 <label>Divisi:</label>
                 <select name="divisi">
                     <option value="">Pilih Divisi</option>
@@ -24,7 +24,7 @@
                     <option value="{{$z->id}}">{{$z->name}}</option>
                     @endforeach
                 </select>
-            </div>
+            </div> -->
             <div class="input-group mb-3">
                 <label>Tanggal Mulai:</label>
                 <input type="date" name="start_date" value="{{ request('start_date') }}">
@@ -81,14 +81,14 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Nama Barang</th>
-                                <th>Tujuan</th>
-                                <th>Deskripsi Barang</th>
-                                <th>Divisi</th>
+                                <th>Nama Bank Unit</th>
+                                <th>Tanggal Penjemputan</th>
+                                <th>Total</th>
+                                <th>Pengelola</th>
                                 <th>Satuan </th>
-                                <th>Jumlah Stock</th>
+                                <th>Jumlah Berat</th>
                                 <th>Status</th>
-                                <th>Requester</th>
+                                <th>Pengelola</th>
                                 <th>Time </th>
 
                                 <!-- <th>Dokumen Pendukung</th> -->

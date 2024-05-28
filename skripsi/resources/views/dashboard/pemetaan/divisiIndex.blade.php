@@ -14,7 +14,7 @@
 <div class="row">
     <div class="col card">
 
-        <h1 class="text-center m-3">Daftar Divisi</h1>
+        <h1 class="text-center m-3">Data Warga</h1>
 
         <div class="col">
             <!-- Button trigger modal -->

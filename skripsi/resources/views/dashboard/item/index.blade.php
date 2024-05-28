@@ -13,7 +13,7 @@
 <div class="row">
     <div class="col card">
 
-        <h1 class="text-center m-3">Kategori Barang</h1>
+        <h1 class="text-center m-3">Daftar Transaksi</h1>
 
         <div class="col m3-p3">
             <!-- Button trigger modal -->
@@ -81,8 +81,8 @@
                 <table class="table">
                     <tr>
                         <th>No.</th>
-                        <th>Nama Barang</th>
-                        <th>Satuan Unit</th>
+                        <th>Nama Bank Unit</th>
+                        <th>Pengelola</th>
                         <th>Aksi</th>
                     </tr>
                     <?php $t = 1 ?>
