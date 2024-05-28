@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{url('vendors')}}/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="{{url('vendors')}}/bootstrap-datepicker/bootstrap-datepicker.min.css" />
     <link rel="stylesheet" href="{{url('css')}}/dashboard.css" />
-    <link rel="shortcut icon" href="{{url('images')}}/cardboardbox.png" />
+    <link rel="shortcut icon" href="{{url('images')}}/sasak_logo.png" />
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -27,8 +27,8 @@
     <div class="container-scroller">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
-                <a class="sidebar-brand brand-logo" href="{{route('home')}}"><img src="{{url('images')}}/pinventory-logo-nobg(1).png" alt="logo" /></a>
-                <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="{{route('home')}}"><img src="{{url('images')}}/logo-box.png" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo" href="{{route('home')}}"><img src="{{url('images')}}/logo_text.png" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="{{route('home')}}"><img src="{{url('images')}}/sasak_logo.png" alt="logo" /></a>
             </div>
             <ul class="nav">
                 <li class="nav-item nav-profile">
@@ -55,7 +55,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.itemReqIndex')}}">
                         <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-                        <span class="menu-title">Pemetaan Request <br> Barang</span>
+                        <span class="menu-title">Daftar Jadwal <br> Penjemputan</span>
                     </a>
                 </li>
 
@@ -69,34 +69,34 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.itemIndex')}}">
                         <i class="mdi mdi-food menu-icon"></i>
-                        <span class="menu-title">Kategori Barang</span>
+                        <span class="menu-title">Daftar Transaksi</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.itemStockIndex')}}">
                         <i class="mdi mdi-contacts menu-icon"></i>
-                        <span class="menu-title">List Stock</span>
+                        <span class="menu-title">Daftar Bank Unit</span>
                     </a>
                 </li>
 
 
                 <li class="nav-item">
                     <span class="nav-link" href="#">
-                        <span class="menu-title">Data divisi</span>
+                        <span class="menu-title">Data Warga</span>
                     </span>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#pemetaan" aria-expanded="false" aria-controls="ui-basic">
                         <i class="mdi mdi-file-document-box menu-icon"></i>
-                        <span class="menu-title">Pemetaan Karyawan</span>
+                        <span class="menu-title">Data Warga</span>
                         <i class="menu-arrow"></i>
                     </a>
                     <div class="collapse" id="pemetaan">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('admin.wargaDivisi')}}">Divisi</a>
+                                <a class="nav-link" href="{{route('admin.wargaDivisi')}}">Warga</a>
                             </li>
                         </ul>
                     </div>
@@ -137,7 +137,7 @@
             </div>
             <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
                 <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
-                    <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="{{url('images')}}/logo-mini.png" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="{{url('images')}}/sasak_logo.png" alt="logo" width=60px height=60px/></a>
                     <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
                         <i class="mdi mdi-menu"></i>
                     </button>

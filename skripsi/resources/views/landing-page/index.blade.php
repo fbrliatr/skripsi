@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Devcrud">
     <title>Home</title>
-    <link rel="shortcut icon" href="{{url('images')}}/cardboardbox.png" />
+    <link rel="shortcut icon" href="{{url('images')}}/sasak_logo.png" />
     <!-- font icons -->
     <link rel="stylesheet" href="{{url('vendors')}}/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
@@ -24,7 +24,7 @@
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="{{url('images')}}/logo_pei.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="{{url('images')}}/logo_text.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,10 +35,13 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Tentang</a>
+                        <a class="nav-link" href="#about">Kategori</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Panduan</a>
+                        <a class="nav-link" href="#service">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Kontak</a>
                     </li>
 
                     @guest
@@ -47,8 +50,7 @@
                     </li>
 
                     @else
-                    <button class="btn btn-primary rounded ml-4" data-toggle="modal" data-target="#update">Update Profile</button>
-
+                    <button class="btn btn-blue rounded ml-4" data-toggle="modal" data-target="#update">Update Profile</button>
 
                     @if(\Illuminate\Support\Facades\Auth::user()->role =='admin')
                     <li class="nav-item">
@@ -57,7 +59,7 @@
                     @endif
                     <li class="nav-item">
                         <a class="btn btn-danger rounded ml-4" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                            document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
                         </a>
 
@@ -90,12 +92,12 @@
                 </div>
                 @endif
                 <h6 class="subtitle">Welcome to</h6>
-                <h6 class="title">PinVentory</h6>
+                <h6 class="title">Sampah Saku</h6>
                 <br>
-                <p>Aplikasi Inventory untuk permintaan dan pencatatan barang</p>
+                <p>Aplikasi Manajemen Bank Sampah Capetang</p>
 
                 <div class="buttons pt-3">
-                    <button class="btn btn-primary rounded" data-toggle="modal" data-target="#tambah">Request Barang</button>
+                    <button class="btn btn-primary rounded" data-toggle="modal" data-target="#tambah">Riwayat Transaksi</button>
                     <!-- <button class="btn btn-primary rounded" data-toggle="modal" data-target="#tambahNon">Pelaporan Stok Barang</button> <br> -->
 
                     @guest
@@ -310,7 +312,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Request Barang</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Lihat Riwayat Transaksi</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -342,7 +344,7 @@
                                     <div class="form-group m-3">
                                         <label for="">Deskripsi Barang</label>
                                         <textarea type="text" name="description" class="form-control"> </textarea>
-                                    </div>
+                                </div>
 
                                     <div class="form-group m-3">
                                         <!-- <label for="">Divisi</label> -->
@@ -378,7 +380,7 @@
             </div>
             
             <div class="img-holder">
-                <img src="{{url('images')}}/inventory.png" alt="">
+                <img src="{{url('images')}}/wastebank.png" alt="">
             </div>
         </div>
 
@@ -405,13 +407,13 @@
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3">
-                    <img src="{{url('images')}}/pinventory-logo.png" alt="" class="img-thumbnail mb-4">
+                    <img src="{{url('images')}}/logo_text.png" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
-                    <h6 class="title">PinVentory</h6>
-                    <p class="subtitle">Aplikasi Manajemen Inventaris</p>
-                    <p align="justify">PinVentory: Solusi inovatif untuk pengelolaan inventaris alat kantor PT Pindad Enjiniring Indonesia. Dengan aplikasi web ini, Anda dapat mengoptimalkan efisiensi dan ketepatan dalam mengelola semua peralatan kantor Anda. 
-                    PinVentory menawarkan antarmuka yang user-friendly dan intuitif, memungkinkan Anda dengan mudah mencatat, melacak, dan mengelola persediaan dengan beberapa klik saja. Dapatkan informasi real-time tentang ketersediaan barang 
+                    <h6 class="title">Sampah Saku</h6>
+                    <p class="subtitle">Aplikasi Manajemen Bank Sampah Capetang</p>
+                    <p align="justify">Sasak: Solusi inovatif untuk penjadwalan dan transaksi jual beli sampah pada Bank sampah Capetang  
+                    SaSak menawarkan antarmuka yang user-friendly dan intuitif, memungkinkan Anda dengan mudah mencatat, melacak, dan mengelola persediaan dengan beberapa klik saja. Dapatkan informasi real-time tentang ketersediaan barang 
                     dan laporan yang detail untuk analisis yang lebih baik. Dengan PinVentory, Anda akan mengalami kemudahan dalam pengelolaan inventaris alat kantor, meningkatkan produktivitas tim, 
                     dan menghindari kerugian akibat kehilangan atau kekurangan persediaan. Segera coba PinVentory dan temukan cara baru yang efektif untuk mengatur inventaris alat kantor Anda.                    
                     </p>

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{url('css')}}/login.css">
 
     <title>Sign Up</title>
-    <link rel="shortcut icon" href="{{url('images')}}/cardboardbox.png" />
+    <link rel="shortcut icon" href="{{url('images')}}/sasak_logo.png" />
 </head>
 
 <body>
@@ -26,14 +26,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 order-md-2">
-                    <img src="images/inventory.png" alt="Image" class="img-fluid">
+                    <img src="images/wastebank.png" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-md-6 contents">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="mb-4">
                                 <h3>Sign Up</h3>
-                                <img src="{{url('images')}}/pinventory-logo-nobg(1).png" alt="..." width="300" height="60">
+                                <img src="{{url('images')}}/logo-text.png" alt="..." width="300" height="50">
                             </div>
                             <form action="{{route('register')}}" method="POST">
                                 @csrf
